@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="backgroundControl">#52616b</color>
+    <color name="controlTextColor">#c9d6df</color>
 </resources>
