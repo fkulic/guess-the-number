@@ -3,4 +3,9 @@
     <string name="bPlayGameText">Play game</string>
     <string name="bShowRulesText">Show rules</string>
     <string name="bViewScoresText">View scores</string>
+    <string name="etHintGuessNumberText">value</string>
+    <string name="tvChooseNumberText">Choose your number:</string>
+    <string name="bGuessText">Guess</string>
+    <string name="tvGuessNoText">Guesses :</string>
+    <string name="bTryAgainText">Try again?</string>
 </resources>

@@ -5,5 +5,4 @@
         <item name="android:background">@color/containerBackground</item>
     </style>
 
-    <color name="containerBackground">#1e2022</color>
 </resources>
