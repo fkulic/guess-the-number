@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".RulesActivity">
         </activity>
+        <activity android:name=".UsernameActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -91,11 +91,19 @@ public class GameActivity extends Activity implements View.OnClickListener {
         if (guess == mRandomNum) {
             tvGuessStatus.setText(GUESS_CORRECT);
             bGuessNumber.setText(R.string.bTryAgainText);
+            saveScore();
         } else if (guess < mRandomNum) {
             tvGuessStatus.setText(GUESS_BIGGER);
         } else {
             tvGuessStatus.setText(GUESS_SMALLER);
         }
+    }
+
+    private void saveScore() {
+        PreferenceManagement pf = new PreferenceManagement();
+        String username = pf.retrieveUsername(getApplicationContext());
+        ScoreDBHelper dbHelper = ScoreDBHelper.getInstance(getApplicationContext());
+        dbHelper.insertScore(new User(username, mGuessCount));
     }
 
     private void setTextLabels(String s, int n) {

@@ -8,4 +8,8 @@
     <string name="bGuessText">Guess</string>
     <string name="tvGuessNoText">Guesses :</string>
     <string name="bTryAgainText">Try again?</string>
+    <string name="bSaveUsername">Save Username</string>
+    <string name="etUsernameHint">username</string>
+    <string name="tvEnterUsername">Enter username:</string>
+    <string name="bOptionsText">Options</string>
 </resources>
