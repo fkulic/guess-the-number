@@ -1,10 +1,12 @@
 package com.fkulic.guessthenumber;
 
+import android.support.annotation.NonNull;
+
 /**
  * Created by Filip on 1.4.2017..
  */
 
-public class User {
+public class User implements Comparable<User> {
     private String username;
     private int score;
 
@@ -19,5 +21,15 @@ public class User {
 
     public int getScore() {
         return score;
+    }
+
+    @Override
+    public int compareTo(@NonNull User o) {
+        if (this.getScore() > o.getScore()) {
+            return 1;
+        } else if (this.getScore() < o.getScore()) {
+            return -1;
+        }
+        return 0;
     }
 }

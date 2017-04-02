@@ -41,6 +41,11 @@ public class ScoreAdapter extends RecyclerView.Adapter<ScoreAdapter.ViewHolder> 
         return this.mUsers.size();
     }
 
+    void loadData(ArrayList<User> users) {
+        mUsers = users;
+        notifyDataSetChanged();
+    }
+
     static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvOrdinalNumber;
         TextView tvUserName;
