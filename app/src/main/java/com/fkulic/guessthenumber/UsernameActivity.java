@@ -1,14 +1,15 @@
 package com.fkulic.guessthenumber;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class UsernameActivity extends Activity implements View.OnClickListener {
+import static com.fkulic.guessthenumber.MainActivity.KEY_USERNAME;
 
-    private PreferenceManagement mPrefs;
+public class UsernameActivity extends Activity implements View.OnClickListener {
 
     EditText etSetUsername;
     Button bSaveUsername;
@@ -21,7 +22,6 @@ public class UsernameActivity extends Activity implements View.OnClickListener {
     }
 
     private void setUpUI() {
-        this.mPrefs = new PreferenceManagement();
         this.etSetUsername = (EditText) findViewById(R.id.etSetUsername);
         this.bSaveUsername = (Button) findViewById(R.id.bSaveUsername);
 
@@ -30,6 +30,10 @@ public class UsernameActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        mPrefs.saveUsername(getApplicationContext(), etSetUsername.getText().toString());
+        String username = this.etSetUsername.getText().toString();
+        Intent intent = new Intent();
+        intent.putExtra(KEY_USERNAME, username);
+        this.setResult(RESULT_OK, intent);
+        this.finish();
     }
 }

@@ -12,4 +12,6 @@
     <string name="etUsernameHint">username</string>
     <string name="tvEnterUsername">Enter username:</string>
     <string name="bOptionsText">Options</string>
+    <string name="tvScoreboardTitle">Top 10</string>
+    <string name="toastChangeUsername">Changed username to: </string>
 </resources>

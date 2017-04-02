@@ -10,7 +10,7 @@ import android.content.SharedPreferences;
 public class PreferenceManagement {
 
     public static final String PREFS_FILE = "user_data";
-    public static final String PREFS_KEY_USERNAME = "username_key";
+    public static final String PREFS_KEY_USERNAME = "username";
 
     public void saveUsername(Context context, String username) {
         SharedPreferences sp = context.getSharedPreferences(PREFS_FILE, Context.MODE_PRIVATE);

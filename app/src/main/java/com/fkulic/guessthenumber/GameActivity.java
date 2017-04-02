@@ -56,6 +56,7 @@ public class GameActivity extends Activity implements View.OnClickListener {
                 Toast.makeText(getApplicationContext(), "Please enter number as value", Toast.LENGTH_SHORT).show();
             }
         } else {
+            bGuessNumber.setText(getString(R.string.bGuessText));
             reset();
         }
 
